@@ -1,0 +1,15 @@
+C:\Users\ozank\Desktop\MyDocs\CSharp\CSharpExamples\bin\Debug\net7.0\CSharpExamples.exe
+C:\Users\ozank\Desktop\MyDocs\CSharp\CSharpExamples\bin\Debug\net7.0\CSharpExamples.deps.json
+C:\Users\ozank\Desktop\MyDocs\CSharp\CSharpExamples\bin\Debug\net7.0\CSharpExamples.runtimeconfig.json
+C:\Users\ozank\Desktop\MyDocs\CSharp\CSharpExamples\bin\Debug\net7.0\CSharpExamples.dll
+C:\Users\ozank\Desktop\MyDocs\CSharp\CSharpExamples\bin\Debug\net7.0\CSharpExamples.pdb
+C:\Users\ozank\Desktop\MyDocs\CSharp\CSharpExamples\obj\Debug\net7.0\CSharpExamples.csproj.AssemblyReference.cache
+C:\Users\ozank\Desktop\MyDocs\CSharp\CSharpExamples\obj\Debug\net7.0\CSharpExamples.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ozank\Desktop\MyDocs\CSharp\CSharpExamples\obj\Debug\net7.0\CSharpExamples.AssemblyInfoInputs.cache
+C:\Users\ozank\Desktop\MyDocs\CSharp\CSharpExamples\obj\Debug\net7.0\CSharpExamples.AssemblyInfo.cs
+C:\Users\ozank\Desktop\MyDocs\CSharp\CSharpExamples\obj\Debug\net7.0\CSharpExamples.csproj.CoreCompileInputs.cache
+C:\Users\ozank\Desktop\MyDocs\CSharp\CSharpExamples\obj\Debug\net7.0\CSharpExamples.dll
+C:\Users\ozank\Desktop\MyDocs\CSharp\CSharpExamples\obj\Debug\net7.0\refint\CSharpExamples.dll
+C:\Users\ozank\Desktop\MyDocs\CSharp\CSharpExamples\obj\Debug\net7.0\CSharpExamples.pdb
+C:\Users\ozank\Desktop\MyDocs\CSharp\CSharpExamples\obj\Debug\net7.0\CSharpExamples.genruntimeconfig.cache
+C:\Users\ozank\Desktop\MyDocs\CSharp\CSharpExamples\obj\Debug\net7.0\ref\CSharpExamples.dll
