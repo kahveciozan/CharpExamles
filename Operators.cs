@@ -40,7 +40,7 @@
             Console.WriteLine($"d: {d++}");
 
             int? k = null;
-            int l = k ?? -1;
+            int l = k ?? -1;               // If k is null then assing -1 to l
             Console.WriteLine($"l: {l}");  // output: -1
         }
 

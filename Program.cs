@@ -62,6 +62,7 @@ class Program
         // Operators Class
         Operators o1 = new Operators();
         ConsoleClass c1 = new ConsoleClass();
+        Strings s1 = new Strings(); ;
 
     }
 
