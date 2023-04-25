@@ -59,7 +59,7 @@ class Program
         Console.WriteLine($"After R-> SecondPlayerAge: {secondSetOfAges[0]}");
 
 
-        // Operators Class
+        // -- OTHER CLASSES --
         Operators o1 = new Operators();
         ConsoleClass c1 = new ConsoleClass();
         Strings s1 = new Strings(); ;
