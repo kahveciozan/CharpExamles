@@ -68,11 +68,9 @@ namespace CSharpExamples
             //decimal roundMid = Math.Round(moneyEarnedAsDecimal, 0, MidpointRounding.ToZero);
             Console.WriteLine($"Rounded Up Money: {roundUp}");
 
-
             // Casting 
             int moneyEarnedAsInt = (int)moneyEarnedAsDecimal;
             float moneyEarnedAsFloat = (float)moneyEarnedAsDecimal;
-
 
             //Console.ReadLine();
         }

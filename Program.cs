@@ -63,6 +63,7 @@ class Program
         Operators o1 = new Operators();
         ConsoleClass c1 = new ConsoleClass();
         Strings s1 = new Strings(); ;
+        CodingStandarts c2 = new CodingStandarts();
 
     }
 
