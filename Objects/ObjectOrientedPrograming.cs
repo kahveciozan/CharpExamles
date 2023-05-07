@@ -1,4 +1,6 @@
-﻿namespace CSharpExamples.OOP
+﻿using CSharpExamples.Interfaces;
+
+namespace CSharpExamples.OOP
 {
     // Classes, Constructors, Instances, Methods, Properties, Access Modifier & Compositon
     internal class ObjectOrientedPrograming
@@ -26,8 +28,32 @@
             // Creating 3rd Player
             Player player3 = new Player(++id, email + "_3", "Stave", "Jobs");
             player3.MovePlayer(new Vector3(3f, 5f, 10f));
-            Console.WriteLine($"Player 3 Id: {player3.UserId}");
+            Console.WriteLine($"Player 3 Id: {player3.Id}");
+            player3.WhoAmI();
 
+            // Convert a child object to a parant object
+            Player player4 = new Player(++id, email + "_4", "Clara", "Toner");
+
+            User player4UserInfo = (User) player4;
+            player4UserInfo.WhoAmI();
+
+
+            IPlayer player5 = new Player(++id, email + "_5");
+            player5.MovePlayer(new Vector3(0, 0, 0));
+
+
+            IPlayer xboxPlayer = new XboxPlayer();
+            xboxPlayer.MovePlayer(new Vector3(4,4,4));
+
+            MovePlayers(new IPlayer[] {xboxPlayer, player5, player4, player3,player2,player1});
+        }
+
+        static void MovePlayers(IPlayer[] players)
+        {
+            foreach(IPlayer p in players)
+            {
+                p.MovePlayer(new Vector3(3, 4, 5));
+            }
         }
 
     }

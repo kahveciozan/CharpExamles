@@ -1,20 +1,15 @@
 ﻿
+using CSharpExamples.Interfaces;
+
 namespace CSharpExamples.OOP
 {
-    public class Player
+    public class Player : User, IPlayer
     {
-        private User user;
         private string email;
         private string firstName;
         private string lastName;
         private Vector3 position = new Vector3(0,0,0);
-
-
-        public int UserId
-        {
-            get { return user.Id;}
-        }
-
+        private string hidingInfo;
 
         public string FullName
         {
@@ -32,18 +27,19 @@ namespace CSharpExamples.OOP
             }
         }
 
-        public Player(int id, string email)
+        public Player(int id, string email) : base(id)
         {
-            user = new User(id);
+
             this.email = email;
+            hidingInfo = socialSecurity;
         }
 
-        public Player(int id, string email, string firstName, string lastName)
+        public Player(int id, string email, string firstName, string lastName) : base(id)
         {
-            user = new User(id);
             this.email = email;
             this.firstName = firstName;
             this.lastName = lastName;
+            hidingInfo = socialSecurity;
         }
 
         private string GetFirstNameWithFirstCharacterOfLast()
@@ -59,7 +55,15 @@ namespace CSharpExamples.OOP
             return $"{firstName} {firstCharacterOFLastName} ";
         }
 
-        internal void FindEnemiesInCloseProximity(int enemies = 3)
+        
+
+        public override void WhoAmI()
+        {
+            base.WhoAmI();
+            Console.Write($"I am an overrided user with email: {email}");
+        }
+
+        public void FindEnemiesInCloseProximity(int enemies = 3)
         {
             Console.WriteLine($"I found {enemies} enemires");
         }
@@ -68,6 +72,23 @@ namespace CSharpExamples.OOP
         {
             position = newPosition;
 
+            return true;
+        }
+
+
+    }
+
+
+    public class XboxPlayer : IPlayer
+    {
+        public void FindEnemiesInCloseProximity(int enemies = 3)
+        {
+            Console.WriteLine("Find Enemies for Xbox");
+        }
+
+        public bool MovePlayer(Vector3 newPosition)
+        {
+            Console.WriteLine("");
             return true;
         }
     }
