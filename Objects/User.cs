@@ -16,7 +16,7 @@
 
         public virtual void WhoAmI()
         {
-            Console.WriteLine($"I am an user with id: {id}");
+            Console.WriteLine($"I am an Parent user with id: {id}");
         }
     }
 }

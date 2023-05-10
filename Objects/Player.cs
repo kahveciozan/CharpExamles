@@ -10,21 +10,23 @@ namespace CSharpExamples.OOP
         private string lastName;
         private Vector3 position = new Vector3(0,0,0);
         private string hidingInfo;
+        private int age;
 
-        public string FullName
+        public string FullName                                      // Property
         {
             get
-            {
-                return $"{firstName} {lastName}";
-            }
+            { return $"{firstName} {lastName}"; }
+        }
+
+        public int Age
+        {
+            get { return age; }
+            set { age = value; }
         }
 
         public string FirstNameWithFirstLastCharacter
         {
-            get
-            {
-                return GetFirstNameWithFirstCharacterOfLast();
-            }
+            get { return GetFirstNameWithFirstCharacterOfLast(); }
         }
 
         public Player(int id, string email) : base(id)
@@ -56,13 +58,12 @@ namespace CSharpExamples.OOP
         }
 
         
-
         public override void WhoAmI()
         {
             base.WhoAmI();
-            Console.Write($"I am an overrided user with email: {email}");
+            Console.Write($"I am an (overrided in child class) user with email: {email}");
         }
-
+        
         public void FindEnemiesInCloseProximity(int enemies = 3)
         {
             Console.WriteLine($"I found {enemies} enemires");
@@ -71,7 +72,6 @@ namespace CSharpExamples.OOP
         public bool MovePlayer(Vector3 newPosition)
         {
             position = newPosition;
-
             return true;
         }
 
