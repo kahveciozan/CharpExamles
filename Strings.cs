@@ -25,13 +25,12 @@ namespace CSharpExamples
             Console.WriteLine("Modified Sentecte: "+ modifiedSentence);
 
             // String trims 
-            star = star.Trim();
+            star = star.Trim();                                                 // Deletes spaces around words
             string modifiedSentence2 = sentence.Replace(planet, star);
             Console.WriteLine("Modified sentence 2: " +modifiedSentence2);
 
             // String chars
             char grabOneLetter = planet[1];
-
             int lengthOfPlanetWord = planet.Length; ;
 
             //Console.ReadLine();
@@ -44,7 +43,7 @@ namespace CSharpExamples
 
             int totalAge = int.Parse(ageStr) + int.Parse(addedAgeStr);
 
-            string weightStr = "203,34";                                     // !!! I did not use '.' because of CALTURE issue
+            string weightStr = "203,34";                                     // !!! I did not use '.' because of CALTURE issue. 
             string addedWeightStr = "12,26";                                 // If your PC has different CALURE. Use '.' instead od ','
 
             double totalWeight = double.Parse(weightStr) + double.Parse(addedWeightStr);

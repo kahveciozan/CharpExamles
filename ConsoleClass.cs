@@ -10,7 +10,7 @@ namespace CSharpExamples
     {
         public ConsoleClass() 
         {
-            Console.WriteLine("\n --- Console class and its methıds ---");
+            Console.WriteLine("\n --- Console class and its methods ---");
 
 
             Console.BackgroundColor = ConsoleColor.Green;

@@ -1,4 +1,5 @@
-﻿using CSharpExamples.OOP;
+﻿using CSharpExamples;
+using CSharpExamples.OOP;
 
 class Program
 {

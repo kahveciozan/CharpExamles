@@ -63,6 +63,9 @@ namespace CSharpExamples
             ValueTypeTesting(secondPlayerAge);
             Console.WriteLine($"After V-> SecondPlayerAge: {secondPlayerAge}");
 
+            // -------
+            Console.WriteLine("------------------------------------");
+
             int[] secondSetOfAges = new int[] { 12, 13, 14 };
             Console.WriteLine($"Before R-> SecondPlayerAge: {secondSetOfAges[0]}");
             ReferenceTypeTesting(secondSetOfAges);
@@ -74,7 +77,7 @@ namespace CSharpExamples
         public static void ValueTypeTesting(int newAge)                    // integer are value type
         {
             newAge = 89;
-            Console.WriteLine(newAge);
+            Console.WriteLine($"Value Type in Methor -> Second Player Age: {newAge}");
 
         }
         public static void ReferenceTypeTesting(int[] ages)                 // arrays are reference types
