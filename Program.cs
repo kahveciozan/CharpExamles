@@ -11,7 +11,8 @@ class Program
         //ConsoleClass c1 = new ConsoleClass();
         //Strings s1 = new Strings(); ;
         //CodingStandarts c2 = new CodingStandarts();
-        ObjectOrientedPrograming o2 = new ObjectOrientedPrograming();
+        //ObjectOrientedPrograming o2 = new ObjectOrientedPrograming();
+        Collections collections = new Collections();
     }
 
 
