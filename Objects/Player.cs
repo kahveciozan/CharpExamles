@@ -1,5 +1,4 @@
-﻿
-using CSharpExamples.Interfaces;
+﻿using CSharpExamples.Interfaces;
 
 namespace CSharpExamples.OOP
 {
@@ -11,6 +10,12 @@ namespace CSharpExamples.OOP
         private Vector3 position = new Vector3(0,0,0);
         private string hidingInfo;
         private int age;
+
+        public string Email
+        {
+            get { return email; }
+
+        }
 
         public string FullName                                      // Property
         {
