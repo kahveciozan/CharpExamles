@@ -34,6 +34,11 @@ namespace CSharpExamples.OOP
             get { return GetFirstNameWithFirstCharacterOfLast(); }
         }
 
+        public Player(int id): base(id)
+        {
+            email = $"{id}@kahveci.com";
+        }
+
         public Player(int id, string email) : base(id)
         {
 
