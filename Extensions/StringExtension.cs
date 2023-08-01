@@ -17,7 +17,5 @@ namespace CSharpExamples.Extensions
             return indexFound;
         }
 
-    }
-
-    
+    }   
 }
