@@ -1,5 +1,4 @@
-﻿
-using CSharpExamples.Interfaces;
+﻿using CSharpExamples.Interfaces;
 
 namespace CSharpExamples.OOP
 {
@@ -11,6 +10,12 @@ namespace CSharpExamples.OOP
         private Vector3 position = new Vector3(0,0,0);
         private string hidingInfo;
         private int age;
+
+        public string Email
+        {
+            get { return email; }
+
+        }
 
         public string FullName                                      // Property
         {
@@ -27,6 +32,11 @@ namespace CSharpExamples.OOP
         public string FirstNameWithFirstLastCharacter
         {
             get { return GetFirstNameWithFirstCharacterOfLast(); }
+        }
+
+        public Player(int id): base(id)
+        {
+            email = $"{id}@kahveci.com";
         }
 
         public Player(int id, string email) : base(id)
