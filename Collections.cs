@@ -35,7 +35,7 @@ namespace CSharpExamples
             {
                 Console.WriteLine($"Player id: {p.Id} " + $"and email:  {p.Email}");
             }
-            #endregion
+#endregion
 
 #region DICTIONARY
             // ------ DICTIONARIES -------
@@ -83,6 +83,62 @@ namespace CSharpExamples
 
             #endregion
 
+#region STACKS and QUEUES
+            // ------ STACKS -------
+            Console.WriteLine("\n### STACKS ###");
+
+            Stack<Player> playerStack = new Stack<Player>();
+            playerStack.Push(new Player(1));
+            playerStack.Push(new Player(2));
+            playerStack.Push(new Player(3));
+            playerStack.Push(new Player(4));
+            playerStack.Push(new Player(5));
+            foreach(Player p in playerStack)
+            {
+                Console.WriteLine($"[STACK] Player id: {p.Id}" + $" and email: {p.Email}");
+            }
+
+
+            var popPlayer = playerStack.Pop();                                                                      // Removes and returns the object at the top of the Stack 
+            Console.WriteLine($"[STACK - POP] Player id: {popPlayer.Id}" + $" and email: {popPlayer.Email}");
+            foreach (Player p in playerStack)
+            {
+                Console.WriteLine($"[STACK] Player id: {p.Id}" + $" and email: {p.Email}");                         
+            }
+
+
+            var peekPlayer = playerStack.Peek();                                                                    // Returns the object at the top of stack without removing it
+            Console.WriteLine($"[STACK - PEEK] Player id: {peekPlayer.Id}" + $" and email: {peekPlayer.Email}");
+            foreach (Player p in playerStack)
+            {
+                Console.WriteLine($"[STACK] Player id: {p.Id}" + $" and email: {p.Email}");
+            }
+
+
+            // ------ QUEUES -----------
+            Console.WriteLine("\n### STACKS ###");
+
+            Queue<Player> playerQueue = new Queue<Player>();
+            playerQueue.Enqueue(new Player(1));
+            playerQueue.Enqueue(new Player(2));
+            playerQueue.Enqueue(new Player(3));
+            playerQueue.Enqueue(new Player(4));
+            playerQueue.Enqueue(new Player(5));
+
+            foreach(Player p in playerQueue)
+            {
+                Console.WriteLine($"[QUEUE] Player id: {p.Id}" + $" and email: {p.Email}");
+            }
+
+            var dequeuePlayer = playerQueue.Dequeue();
+            Console.WriteLine($"[QUEUE- DEQUEUE] Player id: {dequeuePlayer.Id}" + $" and email: {dequeuePlayer.Email}");
+            foreach (Player p in playerQueue)
+            { 
+                Console.WriteLine($"[QUEUE] Player id: {p.Id}" + $" and email: {p.Email}");
+            }
+
+            #endregion
+
         }
     }
 }
@@ -92,6 +148,8 @@ namespace CSharpExamples
 // Collections are represent group of objects.
 // It provides a wat to create and manage a group to numeric types.
 
-// 1.Dictionarie:  DICTIONARY<TKEY, TVAL>
-// 2.Stacks,
-// 3.Queues
+// LIST
+// Dictionaries:  DICTIONARY<TKEY, TVAL>
+
+// Stacks: LIFO (Last In First Out)
+// Queues FIFO (First In First Out) 

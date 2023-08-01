@@ -12,7 +12,8 @@ class Program
         //Strings s1 = new Strings(); ;
         //CodingStandarts c2 = new CodingStandarts();
         //ObjectOrientedPrograming o2 = new ObjectOrientedPrograming();
-        Collections collections = new Collections();
+        //Collections c3 = new Collections();
+        ExtensionMethods e1 = new ExtensionMethods();
     }
 
 
