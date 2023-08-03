@@ -84,7 +84,7 @@ namespace CSharpExamples
             #endregion
 
 #region STACKS and QUEUES
-            // ------ STACKS -------
+            // ------ STACKS ------- LIFO
             Console.WriteLine("\n### STACKS ###");
 
             Stack<Player> playerStack = new Stack<Player>();
@@ -115,8 +115,8 @@ namespace CSharpExamples
             }
 
 
-            // ------ QUEUES -----------
-            Console.WriteLine("\n### STACKS ###");
+            // ------ QUEUES ----------- FIFO
+            Console.WriteLine("\n### QUEUES ###");
 
             Queue<Player> playerQueue = new Queue<Player>();
             playerQueue.Enqueue(new Player(1));

@@ -19,7 +19,7 @@ namespace CSharpExamples
             int index =  "Hello my friend I love coding very much".FindWordIndex(wordToFind);
             Console.WriteLine($"I found word: {wordToFind} at index {index}");
 
-            // Usege of extended XRRig.cs
+            // Usege of extended XRRig
             XRRig picoXRRig = new XRRig("room", 0);
             Console.WriteLine($"\nWhat is my PICO space {picoXRRig.FindXRRigSpace()}");
 
