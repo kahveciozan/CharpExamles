@@ -39,7 +39,7 @@
             int d = !(1 == tempVar || 1 == 1) ? 20 : 10;
             Console.WriteLine($"d: {d++}");
 
-            int? k = null;
+            int? k = null;                 // ? means is NULLABLE 
             int l = k ?? -1;               // If k is null then assing -1 to l
             Console.WriteLine($"l: {l}");  // output: -1
         }

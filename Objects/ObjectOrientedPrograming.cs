@@ -21,11 +21,13 @@ namespace CSharpExamples.OOP
             player1.FindEnemiesInCloseProximity();
             string firstNameWithFirstLast = player1.FirstNameWithFirstLastCharacter;
             player1.Age = 3;
-            Console.WriteLine($"Plyer 1 Age: {player1.Age}");
+            Console.WriteLine($"Player 1 Age: {player1.Age}");
 
             // Creating 2nd Player
             Console.WriteLine("\n -- PLAYER 2 ");
             Player player2 = new Player(++id, email + "_2");
+            Console.WriteLine("\nPlayer 2 Name: " + player2.FullName);
+
 
             // Creating 3rd Player
             Console.WriteLine("\n\n -- PLAYER 3 ");
@@ -41,7 +43,7 @@ namespace CSharpExamples.OOP
             player4UserInfo.WhoAmI();
             Console.WriteLine("\n -- USER CASTING --");
             player4.WhoAmI();
-
+  
             Console.WriteLine("\n\n -- PLAYER 5 ");
             IPlayer player5 = new Player(++id, email + "_5");           // This is very interesting. If we implement a Interface or Class, I can create and cast directly.
             player5.MovePlayer(new Vector3(0, 0, 0));
